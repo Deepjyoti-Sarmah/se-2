@@ -13,6 +13,14 @@ import "../node_modules/hardhat/console.sol";
  */
 contract YourContract {
 
+    //dev test
+
+    address public delegate;
+
+    function setDelegate(address _delegate) isOwner public {
+        delegate = _delegate;
+    }
+
     // State Variables
     address public immutable owner;
     string public greeting = "Building Unstoppable Apps!!!";
